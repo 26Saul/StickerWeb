@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Be Vietnam Pro", sans-serif;
+
+  --color-primary: #b5007d; /* Fuchsia Pink */
+  --color-on-primary: #ffffff;
+  --color-primary-container: #ff4db8;
+  --color-on-primary-container: #5d003e;
+  
+  --color-secondary: #854c6f;
+  --color-secondary-container: #feb7df; /* Soft Pink */
+  --color-on-secondary-container: #7b4466;
+  --color-secondary-fixed: #ffd8eb;
+  --color-on-secondary-fixed-variant: #6a3556;
+
+  --color-surface-container: #edeeef;
+  --color-on-surface-variant: #57404b;
+  --color-outline-variant: #debecb;
+}
+
+/* Custom background grid pattern for tactile/sketchy feel */
+.bubbly-bg {
+  background: radial-gradient(circle at 10% 20%, rgba(255, 77, 184, 0.05) 0%, transparent 20%),
+              radial-gradient(circle at 90% 80%, rgba(181, 0, 125, 0.05) 0%, transparent 20%);
+}
+
+.bubbly-shadow {
+  box-shadow: 0 4px 15px rgba(181, 0, 125, 0.08);
+}
+
+.bubbly-shadow-hover {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.bubbly-shadow-hover:hover {
+  box-shadow: 0 10px 30px rgba(181, 0, 125, 0.15);
+}
+
+/* Infinite Marquee Animation for Contact sticker gallery */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-slow {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+/* Make custom sticker tilt 3D wrapper */
+.card-pers {
+  perspective: 1000px;
+}
+
+/* Hide scrollbar for category filter container on touch screens */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
