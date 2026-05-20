@@ -65,7 +65,7 @@ export default function ContactUs({ onAddMessage, messages }: ContactUsProps) {
 
             <div className="flex items-center gap-2.5">
               <Mail className="w-4 h-4 text-primary shrink-0" />
-              <p className="font-medium">hola@stickerpink.com</p>
+              <p className="font-medium">hola@StickySun Club.com</p>
             </div>
           </div>
 
@@ -199,7 +199,7 @@ export default function ContactUs({ onAddMessage, messages }: ContactUsProps) {
                 <div className="bg-primary text-white p-2 rounded-full shadow-lg border-2 border-white animate-bounce">
                   💖
                 </div>
-                <span className="bg-white/90 text-primary px-3 py-1 font-bold text-[10px] rounded shadow-md mt-1">Sticker Pink taller boutique</span>
+                <span className="bg-white/90 text-primary px-3 py-1 font-bold text-[10px] rounded shadow-md mt-1">StickySun Club taller boutique</span>
               </div>
             </div>
             <p className="text-xs text-on-surface-variant/90 leading-relaxed text-center">

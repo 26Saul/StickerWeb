@@ -178,7 +178,7 @@ export default function App() {
             />
           </div>
           <h1 className="font-display text-xl md:text-2xl font-black text-primary tracking-tight">
-            Sticker Pink
+            StickySun Club
           </h1>
         </div>
 
@@ -482,7 +482,7 @@ export default function App() {
 
       {/* FOOTER AREA */}
       <footer className="w-full px-5 py-8 flex flex-col gap-4 items-center text-center bg-white/80 border-t border-outline-variant/10 mt-auto select-none font-sans">
-        <h3 className="font-display text-lg text-primary font-black">Sticker Pink</h3>
+        <h3 className="font-display text-lg text-primary font-black">StickySun Club</h3>
 
         <nav className="flex gap-6 text-[11px] font-bold text-on-surface-variant/80">
           <button onClick={() => { setActiveTab("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="hover:text-primary">Inicio</button>
@@ -492,8 +492,8 @@ export default function App() {
         </nav>
 
         <div className="flex gap-4 text-primary text-xs font-semibold py-1">
-          <a href="#instagram" className="hover:opacity-80 flex items-center gap-1">
-            <Instagram className="w-4 h-4" /> @StickerPink
+          <a href="https://www.instagram.com/stickysunclub/" className="hover:opacity-80 flex items-center gap-1">
+            <Instagram className="w-4 h-4" /> @StickySun Club
           </a>
           <span className="opacity-30">|</span>
           <a href="#pinterest" className="hover:opacity-80 flex items-center gap-1">
@@ -502,7 +502,7 @@ export default function App() {
         </div>
 
         <p className="text-[10px] text-on-surface-variant opacity-60">
-          © 2026 Sticker Pink. Hecho con amor, pasión y vinilo de alta densidad.
+          © 2026 StickySun Club. Hecho con amor, pasión y vinilo de alta densidad.
         </p>
       </footer>
 

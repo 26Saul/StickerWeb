@@ -101,7 +101,7 @@ export default function CustomStickerForm({
             Impresión y troquelado con precisión milimétrica
           </h3>
           <p className="text-on-surface-variant text-xs max-w-xl">
-            Sube tu diseño y nuestro equipo de Sticker Pink lo optimizará sin costo adicional. Ajustamos colores, líneas de corte y resolvemos imperfecciones gratuitas para que recibas el mejor sticker de vinilo del mercado.
+            Sube tu diseño y nuestro equipo de StickySun Club lo optimizará sin costo adicional. Ajustamos colores, líneas de corte y resolvemos imperfecciones gratuitas para que recibas el mejor sticker de vinilo del mercado.
           </p>
         </div>
         <div className="flex gap-2 text-xs font-bold text-primary bg-white px-4 py-2 rounded-full shadow-xs">
