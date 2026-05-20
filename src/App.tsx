@@ -237,11 +237,11 @@ export default function App() {
           <span>🌸 Pegatinas hechas a mano con amor en vinilo de primera clase </span>
           <span>⚡ Resistente al Agua & Lavavajillas </span>
           <span>💎 Acabados Holográficos, Mate y Glitter </span>
-          <span>🚀 Envío Gratuito en órdenes seleccionadas de la Comunidad </span>
+          <span>🚀 Entrega en mano en Las Palmas 💕 rápido, cercano y con mucho amor  </span>
           <span>🌸 Pegatinas hechas a mano con amor en vinilo de primera clase </span>
           <span>⚡ Resistente al Agua & Lavavajillas </span>
           <span>💎 Acabados Holográficos, Mate y Glitter </span>
-          <span>🚀 Envío Gratuito en órdenes seleccionadas de la Comunidad </span>
+          <span>🚀 Entrega en mano en Las Palmas 💕 rápido, cercano y con mucho amor  </span>
         </div>
       </div>
 
@@ -492,11 +492,11 @@ export default function App() {
         </nav>
 
         <div className="flex gap-4 text-primary text-xs font-semibold py-1">
-          <a href="https://www.instagram.com/stickysunclub/" className="hover:opacity-80 flex items-center gap-1">
+          <a href="https://www.instagram.com/snnyburn?igsh=cGVqbzVmN3huM2hm" className="hover:opacity-80 flex items-center gap-1">
             <Instagram className="w-4 h-4" /> @StickySun Club
           </a>
           <span className="opacity-30">|</span>
-          <a href="#pinterest" className="hover:opacity-80 flex items-center gap-1">
+          <a href="https://www.pinterest.com" className="hover:opacity-80 flex items-center gap-1">
             <Compass className="w-4 h-4" /> stickers.love
           </a>
         </div>
