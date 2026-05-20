@@ -175,7 +175,7 @@ export default function CartCabinet({
           {step === "checkout" && (
             <form onSubmit={handleCheckoutSubmit} className="space-y-4 pt-1">
               <h3 className="font-sans font-bold text-base text-primary border-b border-outline-variant/10 pb-1">
-                Datos de Envío & Pago
+                Datos del Cliente 
               </h3>
               
               <div className="space-y-3">
@@ -214,25 +214,12 @@ export default function CartCabinet({
                     className="w-full px-3 py-2 rounded-lg bg-surface-container-low border border-outline-variant/10 focus:ring-1 focus:ring-primary focus:outline-none text-sm"
                   />
                 </div>
-
-                <div className="space-y-1">
-                  <label className="text-xs font-semibold text-on-surface-variant">N° Tarjeta de Crédito (Simulada)</label>
-                  <input 
-                    type="text"
-                    required
-                    value={creditCard}
-                    onChange={(e) => setCreditCard(e.target.value)}
-                    placeholder="4000 1234 5678 9010"
-                    maxLength={19}
-                    className="w-full px-3 py-2 rounded-lg bg-surface-container-low border border-outline-variant/10 focus:ring-1 focus:ring-primary focus:outline-none text-sm font-mono text-center tracking-wider"
-                  />
-                </div>
               </div>
 
               {/* Secure verification banner */}
               <div className="p-3 bg-green-50 rounded-xl flex items-center gap-2 border border-green-200 text-green-800 text-xs">
                 <ShieldCheck className="w-5 h-5 text-green-600 flex-shrink-0" />
-                <span>Pago y datos cifrados de manera segura con sistema virtual de simulación.</span>
+                <span>Información cifrada de manera segura.</span>
               </div>
             </form>
           )}
@@ -247,7 +234,7 @@ export default function CartCabinet({
                   ¡Pedido Recibido!
                 </h3>
                 <p className="text-on-surface font-semibold text-sm">
-                  Gracias por tu compra, {shippingName}.
+                  Gracias por tu pedido, {shippingName}.
                 </p>
                 <p className="text-on-surface-variant/80 text-xs max-w-sm px-6">
                   Hemos enviado la boleta de compra y el código de seguimiento a <span className="font-bold text-primary">{email}</span>. Tus pegatinas empezarán a producirse en nuestro taller de inmediato con amor y vinilo.
@@ -266,17 +253,12 @@ export default function CartCabinet({
         {cartItems.length > 0 && (
           <div className="p-4 border-t border-outline-variant/30 bg-surface-container-low space-y-3">
             <div className="flex justify-between items-center text-on-surface">
-              <span className="text-sm font-semibold">Subtotal de Stickers</span>
+              <span className="text-sm font-semibold">Subtotal del Pedido</span>
               <span className="text-lg font-black text-primary">${finalTotal.toFixed(2)}</span>
             </div>
             
-            <div className="flex justify-between items-center text-xs text-on-surface-variant">
-              <span>Envío (Correo prioritario)</span>
-              <span className="font-semibold text-green-600">¡Gratis! Pre-promocionado</span>
-            </div>
-
             <div className="border-t border-dashed border-outline-variant/40 pt-2 flex justify-between items-center text-on-surface">
-              <span className="font-bold text-sm">Total Compra:</span>
+              <span className="font-bold text-sm">Total del Pedido:</span>
               <span className="text-base font-extrabold text-primary">${finalTotal.toFixed(2)}</span>
             </div>
 
@@ -286,7 +268,7 @@ export default function CartCabinet({
                   onClick={() => setStep("checkout")}
                   className="w-full py-3 rounded-full bg-primary text-on-primary font-bold hover:bg-opacity-95 text-center block"
                 >
-                  Continuar al Pago
+                  Continuar con el pedido (${finalTotal.toFixed(2)})
                 </button>
               ) : step === "checkout" ? (
                 <div className="flex gap-2">
