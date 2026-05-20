@@ -284,61 +284,6 @@ export default function CustomStickerForm({
             </div>
           </div>
 
-          {/* Follow-up orders history tracker */}
-          <div className="bg-white rounded-3xl p-5 border border-outline-variant/15 shadow-xs flex-1 flex flex-col">
-            <div className="flex items-center justify-between border-b border-outline-variant/10 pb-2 mb-3">
-              <div className="flex items-center gap-1.5 text-primary">
-                <FileSpreadsheet className="w-4 h-4" />
-                <h4 className="font-sans font-extrabold text-sm">Tus Cotizaciones ({customRequests.length})</h4>
-              </div>
-              <span className="text-[10px] text-on-surface-variant flex items-center gap-1">
-                <Timer className="w-3 h-3 text-secondary" />
-                Actualizado en vivo
-              </span>
-            </div>
-
-            <div className="space-y-2 max-h-[220px] overflow-y-auto pr-1 flex-1">
-              {customRequests.length === 0 ? (
-                <div className="text-center py-6 text-on-surface-variant/70 text-xs">
-                  Aún no has enviado diseños a medida. ¡Sube uno arriba!
-                </div>
-              ) : (
-                customRequests.map((req, idx) => (
-                  <div 
-                    key={req.id || idx}
-                    className="p-2.5 bg-surface-container-low rounded-xl border border-outline-variant/10 text-[11px] flex justify-between items-start gap-2 hover:bg-secondary-container/5 transition-colors"
-                  >
-                    <div className="space-y-1">
-                      <div className="flex items-center gap-2">
-                        <span className="font-bold text-on-surface line-clamp-1">{req.name}</span>
-                        <span className="text-[9px] text-on-surface-variant/60">{new Date(req.createdAt).toLocaleDateString()}</span>
-                      </div>
-                      <p className="text-on-surface-variant/80 line-clamp-1 italic">"{req.details}"</p>
-                      
-                      {/* Attached file link */}
-                      {req.fileName && (
-                        <div className="flex items-center gap-1 text-[9px] text-secondary font-medium">
-                          <Eye className="w-2.5 h-2.5" />
-                          <span>Adjunto: {req.fileName}</span>
-                        </div>
-                      )}
-                    </div>
-
-                    <span className={`px-2 py-0.5 rounded-full text-[9px] font-bold shrink-0 ${
-                      req.status === "Aprobado" 
-                        ? "bg-green-100 text-green-800"
-                        : req.status === "En revisión"
-                          ? "bg-yellow-100 text-yellow-800"
-                          : "bg-purple-100 text-purple-800"
-                    }`}>
-                      {req.status}
-                    </span>
-                  </div>
-                ))
-              )}
-            </div>
-          </div>
-
         </div>
 
       </div>

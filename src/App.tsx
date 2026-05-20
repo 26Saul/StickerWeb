@@ -172,7 +172,7 @@ export default function App() {
         >
           <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_2px_8px_rgba(181,0,125,0.3)] group-hover:rotate-12 transition-transform overflow-hidden">
             <img
-              src="/img1.jpg"
+              src={`${import.meta.env.BASE_URL}img1.jpg`}
               alt="icono"
               className="w-full h-full object-cover"
             />
